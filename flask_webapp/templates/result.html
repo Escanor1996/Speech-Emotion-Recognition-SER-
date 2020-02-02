@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SER</title>
+	<link rel="stylesheet" type="text/css"  href="{{url_for('static',filename='styles/app.css')}}">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body class="text-center">
+		<nav>
+				<ul>
+					<li>Emotion Detector</li>
+					<li><a href="https://github.com/Escanor1996/Speech-Emotion-Recognition-SER-">Github</a></li>
+				</ul>
+			</nav>
+			<div class="body">
+		
+					<img src="{{url_for('static',filename='images/pytorch-logo.png')}}" alt="pyy">
+					<h2>Result</h2>
+					<p2 style="
+					    margin-top: 60px;
+					    font-size: 1.8em;
+					    color: fuchsia;">The Emotion is: {{emotions}}</p2>
+				</div>
+				<div>
+						<p style="margin-top:180px;
+						font-size: 1.2em;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						color: darkmagenta
+					">
+							@Made By Arka (accuracy=98.3% && Densenet121)
+						</p>
+					</div>
+</body>
+</html>
